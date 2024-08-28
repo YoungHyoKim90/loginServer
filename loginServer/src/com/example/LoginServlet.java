@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet("/index")
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
     @Override
