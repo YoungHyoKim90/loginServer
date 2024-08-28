@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <title>Error</title>
 </head>
 <body>
-
+    <h2>Login failed. Please try again.</h2>
+    <a href="login.jsp">Back to Login</a>
 </body>
 </html>
