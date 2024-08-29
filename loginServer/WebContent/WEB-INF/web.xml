@@ -15,4 +15,17 @@
     <url-pattern>/index</url-pattern>
 </servlet-mapping>
 
+<!-- 
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <jsp-file>/login.jsp</jsp-file>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServer</url-pattern>
+    </servlet-mapping>
+ --> 
 </web-app>
