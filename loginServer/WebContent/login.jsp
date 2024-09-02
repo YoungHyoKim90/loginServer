@@ -26,11 +26,13 @@
         h2 {
             color: #4CAF50;
             margin-bottom: 20px;
+            
         }
         form {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            
         }
         input[type="text"], input[type="password"] {
             padding: 10px;
