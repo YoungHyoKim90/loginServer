@@ -21,6 +21,7 @@ public class FrameServlet extends HttpServlet {
         request.getRequestDispatcher("/frame.jsp").forward(request, response);
     }
 
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // GET 요청 처리와 동일하게 동작하도록 설정
