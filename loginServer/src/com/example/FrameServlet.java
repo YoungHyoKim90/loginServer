@@ -29,6 +29,9 @@ public class FrameServlet extends HttpServlet {
 		// GET 요청 처리와 동일하게 동작하도록 설정
 		doGet(request, response);
 
+		
 	}
 
+	
 }
+
