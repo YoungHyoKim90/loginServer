@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<%--  
+SELECT 
+    CASE 
+        WHEN APPROVALSTATUS = 1 THEN '상신'
+        WHEN APPROVALSTATUS = 256 THEN '완료'
+        WHEN APPROVALSTATUS = 32 THEN '삭제'
+        WHEN APPROVALSTATUS = 4096 THEN '회수'
+        WHEN APPROVALSTATUS = 512 THEN '반려'
+        ELSE '기타'  -- Optional: Add a default case
+    END AS "문서상태",
+    DRAFTDATE AS "기안시간",
+    DRAFTDEPTNAME AS "기안부서",
+    DRAFTERNAME AS "기안자",
+    DOCREGNO AS "문서번호", 
+    title AS "문서제목", 
+    formname AS "서식명", 
+    STAMPNAME AS "관인",
+    RECEIVERS AS "수신자",
+    SENDERNAME AS "발신자",
+    CASE 
+        WHEN ORGAPPRID <> '00000000000000000000' THEN '접수문서'
+        ELSE NULL  -- or you can replace it with an empty string ''
+    END AS "문서유형"
+FROM 
+    approval 
+WHERE 
+    DRAFTDATE BETWEEN TO_DATE('2024/09/23 00:00:00', 'YYYY/MM/DD HH24:MI:SS') 
+                   AND TO_DATE('2024/09/23 14:59:59', 'YYYY/MM/DD HH24:MI:SS')
+ORDER BY 
+    DRAFTDEPTNAME DESC;
+    --%>
